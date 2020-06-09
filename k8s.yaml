@@ -6,14 +6,14 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: jenkins-demo
+      app: jenkins-demo-sky
   template:
     metadata:
       labels:
-        app: jenkins-demo
+        app: jenkins-demo-sky
     spec:
       containers:
-      - image: cnych/jenkins-demo:<BUILD_TAG>
+      - image: skydianwu/jenkins-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: jenkins-demo
         env:
